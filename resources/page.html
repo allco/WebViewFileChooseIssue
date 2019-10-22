@@ -1,0 +1,15 @@
+<input type=file>
+<div class=result></div>
+<script>
+const inputElement = document.querySelector('input[type=file]')
+
+inputElement.addEventListener('change', handleFiles, false)
+
+function handleFiles() {
+  const result = document.querySelector('.result')
+  result.textContent = `File name is ${this.files[0].name}`
+}
+
+
+
+</script>
